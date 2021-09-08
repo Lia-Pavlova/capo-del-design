@@ -6,7 +6,10 @@
 .hero__content__title {
   font-size: var(--primary-hero-font-size);
   font-weight: var(--primary-font-weight);
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+}
+.hero__content__title:first-child {
+  font-size: 5rem;
 }
 
 .hero__content__link {
