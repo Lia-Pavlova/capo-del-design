@@ -32,3 +32,46 @@
   /* background-color: rgb(var(--secondary-background-color)); */
   border-radius: 15px;
 }
+
+.effect {
+  // text-align: center;
+  // display: inline-block;
+  position: relative;
+  text-transform: capitalize;
+  padding: 20px 0px;
+  width: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.btn-effect {
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    // content: "\261E";
+    content: "\279F";
+    font-family: FontAwesome;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: rgba(#fff, 0.3);
+    border-radius: 0px 6px 6px 0px;
+    transition: all 0.2s linear 0s;
+    text-align: center;
+  }
+
+  &:hover {
+    text-indent: -30px;
+
+    &:before {
+      right: 0;
+      text-indent: 0px;
+    }
+  }
+}

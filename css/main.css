@@ -636,6 +636,46 @@ ul {
   border-radius: 15px;
 }
 
+.effect {
+  position: relative;
+  text-transform: capitalize;
+  padding: 20px 0px;
+  width: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.btn-effect {
+  transition: all 0.2s linear 0s;
+}
+
+.btn-effect:before {
+  content: "\279F";
+  font-family: FontAwesome;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0px 6px 6px 0px;
+  transition: all 0.2s linear 0s;
+  text-align: center;
+}
+
+.btn-effect:hover {
+  text-indent: -30px;
+}
+
+.btn-effect:hover:before {
+  right: 0;
+  text-indent: 0px;
+}
+
 .service__block {
   align-items: center;
   display: flex;
@@ -766,7 +806,9 @@ textarea:focus {
 
 .form__submit {
   background-color: var(--secondary-background-color);
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  outline: none;
   color: var(--secondary-color);
   cursor: pointer;
   display: block;
@@ -774,28 +816,57 @@ textarea:focus {
   padding: 10px 15px;
 }
 
-.form__submit:hover,
-.form__submit:focus {
-  color: #ffee06;
-  outline: 1px auto var(--secondary-background-color);
+.btn {
+  max-width: 50%;
+  min-width: 50%;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 0.6em;
+  color: grey;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.form__submit:active {
-  outline: 1px auto var(--secondary-background-color);
-  margin-top: 1px;
+.btn:hover,
+.btn:focus {
+  color: #ffee06;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn:hover:active,
+.btn:focus:active {
   text-shadow: #333333 0 -1px 0;
-  border: 1px solid #333333;
-  background: #ffee06;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffee06), to(gray));
-  background: -webkit-linear-gradient(top, #ffee06, gray);
-  background: -moz-linear-gradient(top, #ffee06, gray);
-  background: -ms-linear-gradient(top, #ffee06, gray);
-  background: -o-linear-gradient(top, #ffee06, gray);
-  background-image: -ms-linear-gradient(top, #ffee06 0%, gray 100%);
-  color: #fff;
-  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-  -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-  box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px rgba(128, 128, 128, 0.651) inset;
 }
 
 .footer {
