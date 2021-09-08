@@ -1,0 +1,65 @@
+:root {
+  /* reset.css */
+  --default-font-size: 1rem;
+  --default-font-weight: 400;
+
+  /* utils.css */
+  --container-max-width: 1200px;
+  --form-max-width: 600px;
+
+  /* Background Colors */
+  /* --primary-background-color: 251, 252, 254; #fbfcfe */
+  --primary-background-color: #ffffff;
+  // --primary-background-color: 255, 255, 255;
+  /* --secondary-background-color: 162, 173, 99; #a2ad63 */
+  --secondary-background-color: #808080; /*gray*/
+  // --primary-background-color: 128, 128, 128;
+
+  /* Colors */
+  --primary-color: #2b3618;
+  --secondary-color: #ffffff;
+  --secondary-icon-color: #808080;
+  --icon-color: #435426;
+  --social-icon-color: #494747;
+  --icon-hover-color: #5a7133;
+  --accent-color: #f3e521;
+
+  /* Font Families */
+  --primary-font-family: "Raleway", sans-serif;
+
+  /* Font Sizes */
+  --primary-hero-font-size: 2.5rem;
+  --section-title-font-size: 1.8rem;
+  --section-subtitle-font-size: 1.4rem;
+  --navigation-link-font-size: 1.2rem;
+
+  /* Font Weights */
+  --primary-font-weight: 700;
+  --secondary-font-weight: 600;
+
+  /* Line Heights */
+  --text-line-height: 1.5;
+
+  /* Sizes */
+  --header-min-height: 100vh;
+
+  /* Transitions */
+  --transition-duration: 1s;
+  --transition-timing-function: ease-in-out;
+
+  /* Shadows + animation */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 200px) {
+  :root {
+    --primary-hero-font-size: 2.1rem;
+    --section-subtitle-font-size: 1rem;
+  }
+}
+
+@media (min-width: 820px) {
+  :root {
+    --primary-header-font-size: 3rem;
+  }
+}

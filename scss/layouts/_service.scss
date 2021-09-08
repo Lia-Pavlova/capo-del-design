@@ -1,0 +1,24 @@
+.service__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.service__item {
+  align-items: center;
+  margin: 25px;
+}
+
+.service__item__icon {
+  color: var(--icon-color);
+}
+
+.service__item:hover .service__item__icon {
+  /* color: var(--icon-hover-color); */
+  color: rgba(255, 238, 6, 0.877);
+}
+
+.service__item__title {
+  border-bottom: 1px dotted var(--primary-color);
+}

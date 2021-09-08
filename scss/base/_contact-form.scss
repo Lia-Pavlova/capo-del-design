@@ -1,0 +1,95 @@
+/* Forms */
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--form-max-width);
+
+  // border: 2px solid rgb(255, 238, 6);
+  // border-radius: 10px;
+  // box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  // // background-clip: padding-box;
+  // overflow: hidden;
+}
+
+.form__label {
+  font-weight: var(--primary-font-weight);
+  color: gray;
+}
+
+.form__input {
+  border: 1px solid var(--secondary-background-color);
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.form__input:hover {
+  outline: rgb(255, 238, 6);
+}
+
+.form__input:hover,
+.form__input:focus {
+  outline: 1px auto var(--secondary-background-color);
+}
+/* outline: 1px auto rgba(255, 238, 6, 0.733); */
+
+.form__input:focus,
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.form__submit {
+  background-color: var(--secondary-background-color);
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: block;
+  font-weight: var(--secondary-font-weight);
+  padding: 10px 15px;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  color: rgb(255, 238, 6);
+  outline: 1px auto var(--secondary-background-color);
+}
+
+.form__submit:active {
+  outline: 1px auto var(--secondary-background-color);
+  margin-top: 1px;
+  text-shadow: #333333 0 -1px 0;
+  border: 1px solid #333333;
+  background: rgb(255, 238, 6);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(255, 238, 6)),
+    to(rgb(128, 128, 128))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgb(255, 238, 6),
+    rgb(128, 128, 128)
+  );
+  background: -moz-linear-gradient(top, rgb(255, 238, 6), rgb(128, 128, 128));
+  background: -ms-linear-gradient(top, rgb(255, 238, 6), rgb(128, 128, 128));
+  background: -o-linear-gradient(top, rgb(255, 238, 6), rgb(128, 128, 128));
+  background-image: -ms-linear-gradient(
+    top,
+    rgb(255, 238, 6) 0%,
+    rgb(128, 128, 128) 100%
+  );
+  color: #fff;
+  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  // outline: none;
+}

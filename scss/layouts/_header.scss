@@ -1,0 +1,9 @@
+.header {
+  /* background-image: url("../images/bg.jpg"); */
+  background-image: url(../images/thumb.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-color, 0.7);
+  min-height: var(--header-min-height);
+}
