@@ -59,6 +59,13 @@
 
   &:hover > .contacts__icon,
   &:focus > .contacts__icon {
-    fill: rgb(14, 190, 14);
+    fill: var(--icon-color);
+    // transform: scale(1.2);
+    -webkit-animation: swing 0.7s ease;
+    animation: swing 0.7s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    // width: 18px;
+    // height: 18px;
   }
 }
